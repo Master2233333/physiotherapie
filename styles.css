@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #333; /* Dark grey background */
+    overflow: hidden; /* Prevent scrolling */
+}
+header {
+    background-color: #2fc45f;
+    padding: 10px 0;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+header .logo img {
+    width: 50px;
+    height: auto;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 5px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: #007bff;
+}
+.container {
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.content-section {
+    display: none;
+    padding: 20px;
+    background: #444; /* Dark grey section background */
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.content-section.active {
+    display: block;
+}
+.services-list, .qualifications-list {
+    list-style: none;
+    padding: 0;
+}
+.services-list li, .qualifications-list li {
+    margin: 10px 0;
+    color: blue;
+}
+.services-list li::before, .qualifications-list li::before {
+    content: '➤';
+    color: blue;
+    margin-right: 10px;
+}
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.team-member .ifk-logo {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
+footer {
+    background-color: #2fc45f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    header .logo img {
+        width: 40px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+}
