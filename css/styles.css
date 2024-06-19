@@ -7,24 +7,28 @@ body {
     overflow: hidden; /* Prevent scrolling */
 }
 
+
+
+
+
 .content-section {
     display: none;
     padding: 20px;
-    background: #444; /* Dark grey section background */
+    background: #444;
     color: #fff;
     border-radius: 10px;
     margin: 10px 0;
-    overflow-y: auto;
-    max-height: calc(100vh - 80px); /* Adjust as necessary */
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: calc(100vh - 80px); /* Adjust max height as needed */
 }
-
-
-
 
 #services {
     background-color: transparent; /* Remove background color */
-    padding: 0; /* Remove padding if not needed */
+    padding: 20px 0; /* Add padding for content */
+    overflow-y: auto; /* Enable scrolling */
+    max-height: calc(100vh - 80px); /* Adjust max height as needed */
 }
+
 #services h2 {
     color: #007bff; /* Blue text color */
     font-size: 3rem; /* Adjust font size as needed */
